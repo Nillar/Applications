@@ -1,0 +1,707 @@
+@import url('https://fonts.googleapis.com/css?family=Clicker+Script');
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+* {
+    margin: 0 auto;
+    padding: 0;
+    max-width: 1920px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+    color: #1c1c1c;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    box-sizing: border-box;
+    font-family: monospace;
+    font-size: 18px;
+}
+
+.site-top-nav {
+    background-color: #F7F7F7;
+}
+
+.site-top-nav ul {
+    text-align: right;
+    margin-right: 30px;
+}
+
+.site-top-nav > ul > li {
+    display: inline-flex;
+}
+
+.site-top-nav a {
+    font-weight: bold;
+    font-size: 0.8em;
+    text-decoration: none;
+    color: #1c1c1c;
+    text-align: center;
+    text-transform: uppercase;
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+    flex-shrink: 1;
+    padding: 30px 15px;
+}
+
+li.home {
+    background: #EEEEEE;
+}
+
+.site-top-nav li:hover {
+    background: #EEEEEE;
+    cursor: pointer;
+    transition: all 0.4s linear;
+}
+
+#menu-icon {
+    display: none;
+    width: 12px;
+    height: 12px;
+    padding: 25px;
+    position: absolute;
+    border-radius: 25px;
+}
+
+#menu-icon i {
+    font-size: 50px;
+    position: relative;
+    top: -18px;
+    left: -18px;
+    border: 1px solid #EEEEEE;
+    padding: 0 4px 0 4px;
+    border-radius: 10px;
+    color: #EEEEEE;
+}
+
+a:hover#menu-icon {
+    opacity: 0.6;
+}
+
+.landing-page {
+    background: url("../img/Flowers and Horns wip5 - resize.jpg") no-repeat center center;
+    background-size: cover;
+    height: 700px;
+}
+
+.landing-page article {
+    position: relative;
+    bottom: -410px;
+    width: 750px;
+    border-radius: 15px;
+    text-shadow: 0 0 18px black;
+}
+
+.landing-page article h1 {
+    font-family: monospace;
+    font-weight: normal;
+    font-size: 2.4em;
+    line-height: 70px;
+    color: #ffffff;
+    text-align: center;
+    padding: 0;
+    text-transform: uppercase;
+    letter-spacing: 7px;
+    text-shadow: 0 0 18px black;
+}
+
+.landing-page article h1.names {
+    text-align: center;
+    border-bottom: 3px solid white;
+    width: 75%;
+    text-shadow: 0 0 12px black;
+}
+
+.landing-page article h2 {
+    font-family: "Clicker Script", sans-serif;
+    font-size: 2.8em;
+    color: white;
+    margin: 10px;
+    padding: 15px 0 15px 0;
+    text-align: center;
+    text-shadow: 0 0 12px black;
+}
+
+.articles {
+    text-align: center;
+    background-color: #98a480;
+}
+
+.articles article {
+    display: inline-block;
+    width: 250px;
+    text-align: center;
+    margin: 40px 30px 50px 30px;
+    vertical-align: top;
+}
+
+.fa-lastfm:before {
+    content: "\f202";
+    color: white;
+    opacity: 0.95;
+    text-shadow: 0 0 12px black;
+}
+
+.articles h3 {
+    margin: 20px 0 10px 0;
+    text-align: center;
+    color: white;
+    opacity: 0.95;
+    text-shadow: 0 0 12px black;
+}
+
+.articles p {
+    text-align: justify;
+    padding-top: 10px;
+    color: white;
+    opacity: 0.95;
+    text-shadow: 0 0 5px black;
+}
+
+.speed-draw {
+    text-align: center;
+    background-color: #F7F7F7;
+}
+
+.speed-draw div {
+    display: inline-block;
+    vertical-align: top;
+    padding: 35px 0 35px 0;
+    text-align: left;
+}
+
+.speed-draw ul {
+    list-style: none;
+}
+
+.speed-draw ul li {
+    font-size: 1.4em;
+    margin: 20px;
+    font-style: italic;
+}
+
+.drawing-information {
+    padding-right: 15px !important;
+}
+
+.drawing-information h1 {
+    padding-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 1.4em;
+    text-align: center;
+}
+
+.drawing-information ul {
+    margin-left: 15px;
+}
+
+div.video iframe {
+    width: 560px;
+    height: 315px;
+}
+
+.hand-drawing {
+    background: url("../img/30.jpg") no-repeat;
+    background-size: cover;
+    height: 400px;
+    text-align: center;
+}
+
+.hand-drawing article {
+    display: inline-block;
+    width: 150px;
+    text-align: left;
+    padding: 15px 30px 0 30px;
+    margin: 140px 10px 0 10px;
+    vertical-align: top;
+}
+
+.hand-drawing h4 {
+    font-size: 1.8em;
+    padding-bottom: 15px;
+    text-shadow: 0 0 12px black;
+    color: #EEEEEE;
+}
+
+.hand-drawing p {
+    font-size: 1.6em;
+    padding-bottom: 15px;
+    text-shadow: 0 0 12px black;
+    text-transform: capitalize;
+    color: #EEEEEE;
+}
+
+h3.featured-title {
+    margin: 20px 0 20px 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 5px;
+    font-size: 1.8em;
+}
+
+.featured-works {
+    display: flex;
+    padding: 30px;
+}
+
+.flex-item {
+    display: flex;
+    margin: 5px;
+    width: 250px;
+    height: 235px;
+    flex-grow: 1;
+    text-align: center;
+}
+
+.flex-item img {
+    background: no-repeat center center;
+    background-size: cover;
+    width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    transform: scale(0.9);
+    transition: all 0.7s ease;
+}
+
+.flex-item:hover img {
+    transform: scale(1.1);
+}
+
+footer {
+    background-color: #ECE6B4;
+    min-height: 60px;
+    padding: 40px 0 40px 0;
+    max-height: 150px;
+    font-size: 0.8em;
+}
+
+footer div {
+    display: inline-block;
+    vertical-align: middle;
+    color: #393939;
+}
+
+footer ul {
+    list-style: none;
+}
+
+footer ul li {
+    display: inline-block;
+    color: #1c1c1c;
+}
+
+.copyright {
+    padding-left: 25px;
+    width: 40%;
+}
+
+.copyright .small-text {
+    font-size: 0.9em;
+}
+
+.font-awesome-links {
+    text-align: center;
+    float: right;
+}
+
+.font-awesome-links svg {
+    width: 40px;
+    height: 40px;
+    position: relative;
+    bottom: -5px;
+    color: #393939;
+}
+
+svg:hover path#path9,
+svg:hover path#path11,
+svg:hover polygon#polygon7 {
+    fill: #13AEEF!important;
+    transition: all 0.4s linear;
+}
+
+.font-awesome-links a {
+    text-decoration: none;
+}
+
+.font-awesome-links {
+    margin-right: 65px;
+}
+
+.fa-facebook-square,
+.fa-instagram,
+.fa-twitch,
+.fa-deviantart {
+    color: #393939;
+    font-size: 40px;
+    padding: 10px;
+    margin-right: 10px;
+}
+
+.fa-facebook-square:hover {
+    color: #4267b2;
+    background: transparent;
+    transition: all 0.4s linear;
+}
+
+.fa-instagram:hover {
+    background: transparent;
+    color: #b30700;
+    transition: all 0.4s linear;
+}
+
+.fa-twitch:hover {
+    background: transparent;
+    color: rebeccapurple;
+    transition: all 0.4s linear;
+}
+
+.fa-deviantart:hover {
+    background: transparent;
+    color: #05cc47;
+    transition: all 0.4s linear;
+}
+
+/*END OF HOME PAGE CSS*/
+
+/*CONTACT PAGE CSS*/
+
+.contact {
+    background-color: #1c1c1c;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    padding: 105px 0 105px 0;
+    min-height: 540px;
+    max-height: 800px;
+}
+
+.contact div {
+    display: inline-block;
+    text-align: left;
+    margin: 0 auto;
+}
+
+.contact-greeting {
+    max-width: 30%;
+    padding: 30px 50px;
+    margin: 0 auto;
+}
+
+.contact-greeting h4 {
+    color: white;
+    text-align: center;
+    font-style: italic;
+    padding-bottom: 30px;
+    font-size: 1.5em;
+    font-weight: 400;
+}
+
+.contact-greeting p {
+    color: #8a8a8a;
+    padding-top: 35px;
+}
+
+.contact-form {
+    min-width: 40%;
+    max-width: 60%;
+    padding-left: 15px;
+    padding-top: 30px;
+}
+
+.contact-form div {
+    display: block;
+}
+
+label {
+    display: block;
+    height: 72px;
+    margin: 10px 0 10px 0;
+}
+
+
+input {
+    width: 300px;
+    padding: 15px;
+    text-align: center;
+    margin-bottom: 15px;
+    /*border-radius: 15px;*/
+    background: rgba(70, 85, 83, 0.3);
+    border: none;
+    box-shadow: 0px 0px 5px #EEEEEE;
+    color: #EEEEEE;
+    font-size: 1em;
+    outline-color: #EEEEEE;
+}
+
+textarea {
+    width: 300px;
+    height: 100px;
+    padding: 15px;
+    text-align: left;
+    /*border-radius: 15px;*/
+    background: rgba(70, 85, 83, 0.3);
+    border: none;
+    box-shadow: 0px 0px 5px white;
+    color: white;
+    font-size: 1em;
+    resize: none;
+    position: relative;
+    left: 31px;
+    outline-color: #EEEEEE;
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: white;
+    font-family: monospace;
+    font-size: 18px;
+    font-style: italic;
+}
+
+.send-button {
+    font-family: monospace;
+    font-size: 1em;
+    font-weight: 700;
+    padding: 15px 30px;
+    background: rgba(70, 85, 83, 0.3);
+    color: #f2f2f2;
+    margin: 30px;
+    /*border-radius: 15px;*/
+    border: none;
+    position: relative;
+    bottom: -45px;
+
+    box-shadow: 0px 0px 5px white;
+}
+
+.send-button:hover {
+    cursor: pointer;
+    background: rgba(39, 39, 39, 0.3);
+    transition: all 0.4s linear;
+}
+
+.fa-user,
+.fa-envelope,
+.fa-comments {
+    width: 22px;
+    font-size: 1.2em;
+    color: #f2f2f2;
+    position: relative;
+    left: 43px;
+    bottom: -1px;
+}
+
+/*END OF CONTACT PAGE CSS*/
+
+/*ABOUT ME PAGE CSS*/
+.about-me {
+    background-color: #1c1c1c;
+    text-align: center;
+
+    flex-direction: row;
+    flex-grow: 1;
+    padding: 60px 0 60px 0;
+    min-height: 540px;
+    max-height: 800px;
+}
+
+.about-me div {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.about-me .personal-info {
+    width: 30%;
+}
+
+.meet-the-artist {
+    background: url("../img/meet the artist - resize.jpg") no-repeat;
+    background-size: contain;
+    height: 600px;
+    min-width: 40%;
+    max-width: 60%;
+    padding-left: 15px;
+    padding-top: 30px;
+}
+
+.personal-info {
+    margin: 75px 15px 0 0;
+}
+
+.personal-info h4 {
+    color: white;
+    text-align: center;
+    font-style: italic;
+    padding-bottom: 30px;
+    font-size: 1.5em;
+    font-weight: 400;
+    text-transform: capitalize;
+}
+
+.personal-info p {
+    color: #8a8a8a;
+    padding-top: 35px;
+    text-align: left;
+}
+
+/*END OF ABOUT ME PAGE CSS*/
+
+/*PORTFOLIO CSS*/
+
+.gallery {
+    display: inline-block;
+    padding: 50px 30px 80px 30px;
+    text-align: center;
+    background-color: #1c1c1c;
+}
+
+.gallery h2 {
+    font-family: monospace;
+    font-weight: 400;
+    color: #EEEEEE;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    border-bottom: 2px solid #EEEEEE;
+    padding: 10px 0 20px 0;
+    margin-bottom: 45px;
+}
+
+.picture {
+    display: flex;
+}
+
+.gallery div.picture {
+    display: inline-block;
+    margin: 5px;
+    width: 250px;
+    height: 235px;
+    flex-grow: 1;
+    text-align: center;
+    vertical-align: top;
+    padding: 5px;
+}
+
+.gallery img {
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 0;
+    background: no-repeat center center;
+    background-size: cover;
+    width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    transform: scale(0.9);
+    transition: all 0.7s ease;
+}
+
+.gallery img:hover {
+    transform: scale(1.1);
+}
+
+img#modal-image {
+    transform: none;
+
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 30px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.9)
+}
+
+.modal-content {
+    display: block;
+    max-width: 700px;
+    position: relative;
+    margin: auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+    from {
+        -webkit-transform: scale(0)
+    }
+    to {
+        -webkit-transform: scale(1)
+    }
+}
+
+@keyframes zoom {
+    from {
+        transform: scale(0)
+    }
+    to {
+        transform: scale(1)
+    }
+}
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+@-webkit-keyframes animatetop {
+    from {
+        top: -300px;
+        opacity: 0
+    }
+    to {
+        top: 0;
+        opacity: 1
+    }
+}
+
+@keyframes animatetop {
+    from {
+        top: -300px;
+        opacity: 0
+    }
+    to {
+        top: 0;
+        opacity: 1
+    }
+}

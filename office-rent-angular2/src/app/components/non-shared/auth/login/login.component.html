@@ -1,0 +1,27 @@
+<div id="preloader" *ngIf="loader">
+  <div id="loader"></div>
+</div>
+<div *ngIf="!loader" class="container main-body">
+  <h1>Welcome to Office Rent</h1>
+  <h3>Please Login to Browse the Site</h3>
+  <form (ngSubmit)="submit(login)" [formGroup]='login'>
+    <div class="form-group">
+      <div class="form-group col-md-6">
+        <label for="inputName4">Username</label>
+        <input formControlName="username" type="text" class="form-control" id="inputName4" placeholder="Name">
+        <div *ngIf="login.get('username').errors && login.get('username').touched" class="alert alert-danger">Username is required</div>
+      </div>
+
+      <div class="form-group  col-md-6">
+        <label for="inputPassword4">Password</label>
+        <input formControlName="password" type="password" class="form-control" id="inputPassword4"
+               placeholder="Password">
+        <div *ngIf="login.get('password').errors && login.get('password').touched" class="alert alert-danger">
+          Password is required
+        </div>
+      </div>
+    </div>
+    <button type="submit" [disabled]="login.invalid" style="margin-left: 15px"   class="btn btn-primary">Sign in</button>
+    <a routerLink="/register">Don't have an account?</a>
+  </form>
+</div>
