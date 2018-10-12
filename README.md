@@ -204,6 +204,19 @@
 </html>
 
 
+// script
+$(document).ready(function() {
+	var $menu = $("#menu"),
+		$menulink = $(".menu-link");
+
+	$menulink.click(function() {
+		$menulink.toggleClass("open");
+		$menu.toggleClass("open");
+		return false;
+	});
+});
+
+
 // style.css
 @import url('https://fonts.googleapis.com/css?family=Marmelad&subset=cyrillic');
 @import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700');
